@@ -1,0 +1,28 @@
+### register
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+  "name": "udin",
+  "email": "udin@mail.com",
+  "password": "123"
+}
+
+### login
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+  "email": "udin@mail.com",
+  "password": "123"
+}
+
+### whoami
+GET http://localhost:3000/api/v1/whoami
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1OTU0MzUyfQ.xf8uUQC4tko2gyrQZ2WdgxtSK-NxgTmL3KDN1DAMSes
+
+### request verify email
+GET http://localhost:3000/api/v1/request-verify
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzE1OTU0OTg2fQ.6hJLrS0AVWruhL_lujHgeUl37dTLAYGsSCR1nO73OfM
